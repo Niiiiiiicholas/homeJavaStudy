@@ -1,4 +1,4 @@
-package ru.newStudy.homeJava.ArraysAndCollections2;
+package ru.newStudy.homeJava.Collections.ArraysAndCollections2;
 
 import java.util.ArrayList;
 

@@ -34,13 +34,11 @@ public class Cat
         return sumFeed;
     }
 
-    public void drink(Double amount)
-    {
+    public void drink(Double amount){
         weight = weight + amount;
     }
 
-    public Double getWeight()
-    {
+    public Double getWeight() {
         return weight;
     }
     public void pee(){
@@ -48,8 +46,7 @@ public class Cat
         System.out.println("Котейка сходил в туалет :) ");
     }
 
-    public String getStatus()
-    {
+    public String getStatus() {
         if(weight < minWeight) {
             return "Dead";
         }

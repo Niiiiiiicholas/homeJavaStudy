@@ -1,4 +1,4 @@
-package ru.newStudy.homeJava.ArraysAndCollections5;
+package ru.newStudy.homeJava.Collections.ArraysAndCollections5;
 
 import java.util.*;
 
@@ -14,7 +14,6 @@ public class Lesson1 {
         for(String c:hashSetNum){
             System.out.println(c);
         }
-
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите номер: ");

@@ -1,4 +1,4 @@
-package ru.newStudy.homeJava.ArraysAndCollections3;
+package ru.newStudy.homeJava.Collections.ArraysAndCollections3;
 
 import java.util.TreeSet;
 

@@ -1,4 +1,4 @@
-package ru.newStudy.homeJava.ArraysAndCollections4;
+package ru.newStudy.homeJava.Collections.ArraysAndCollections4;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +29,6 @@ public class Lesson1 {
         Start();
     }
 
-
     //Начало программы
     public static void Start() {
         Scanner scanner = new Scanner(System.in);
@@ -50,7 +49,6 @@ public class Lesson1 {
             Next();
         }
     }
-
     //Продолжение выполнения
     public static void Next() {
         System.out.println("Хотите еще? напишите ДА или НЕТ ");
@@ -58,10 +56,7 @@ public class Lesson1 {
         String yesNot = scanner.nextLine();
         if (yesNot.equals("ДА")){ countClone=0;Start();}
         else System.out.println("ПОКА :)");
-
     }
-
-
     //Проверка имени
     public static boolean scanName(String s) {
         if (s.matches(NAME)) {
@@ -70,7 +65,6 @@ public class Lesson1 {
             System.out.println("Неверный формат имени: ");
             return false;
         }
-
     }
 
     //Проверка телефона
@@ -81,7 +75,6 @@ public class Lesson1 {
             System.out.println("Неверный формат телефона: ");
             return false;
         }
-
     }
 
     //Печать всей записной книги
@@ -129,7 +122,6 @@ public class Lesson1 {
                 printMap();
                 Next();
             }
-
         }
         Next();
     }

@@ -10,8 +10,7 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
-    public Cat()
-    {
+    public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -24,8 +23,7 @@ public class Cat
         return count;
     }
 
-    public void meow()
-    {
+    public void meow() {
         if(weight<minWeight||weight>maxWeight){return;}
         weight = weight - 1;
         System.out.println("Meow");
@@ -34,22 +32,19 @@ public class Cat
         }
     }
 
-    public void feed(Double amount)
-    {
+    public void feed(Double amount) {
         if(weight<minWeight||weight>maxWeight){return;}
         weight = weight + amount;
         sumFeed+=amount;
         if(getStatus().equals("Dead")||getStatus().equals("Exploded")){
             count--;
         }
-
     }
     public double getSumFeed(){
         return sumFeed;
     }
 
-    public void drink(Double amount)
-    {
+    public void drink(Double amount) {
         if(weight<minWeight||weight>maxWeight){return;}
         weight = weight + amount;
         if(getStatus().equals("Dead")||getStatus().equals("Exploded")){
@@ -57,8 +52,7 @@ public class Cat
         }
     }
 
-    public Double getWeight()
-    {
+    public Double getWeight() {
         return weight;
     }
     public void pee(){
@@ -70,8 +64,7 @@ public class Cat
         }
     }
 
-    public String getStatus()
-    {
+    public String getStatus() {
         if(weight < minWeight) {
             return "Dead";
         }

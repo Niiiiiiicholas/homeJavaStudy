@@ -13,7 +13,6 @@ public class Lesson3 {
         System.out.println("Имя: " + people[1]);
         System.out.println("Отчество: " + people[2]);
 
-
     }
-
 }
+

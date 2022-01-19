@@ -1,15 +1,13 @@
 package ru.newStudy.homeJava.ClassStudy.Lesson1;
 
-public class Cat
-{
+public class Cat {
     private double originWeight;
     private double weight;
 
     private double minWeight;
     private double maxWeight;
 
-    public Cat()
-    {
+    public Cat() {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -17,29 +15,24 @@ public class Cat
 
     }
 
-    public void meow()
-    {
+    public void meow() {
         weight = weight - 1;
         System.out.println("Meow");
     }
 
-    public void feed(Double amount)
-    {
+    public void feed(Double amount) {
         weight = weight + amount;
     }
 
-    public void drink(Double amount)
-    {
+    public void drink(Double amount) {
         weight = weight + amount;
     }
 
-    public Double getWeight()
-    {
+    public Double getWeight() {
         return weight;
     }
 
-    public String getStatus()
-    {
+    public String getStatus() {
         if(weight < minWeight) {
             return "Dead";
         }

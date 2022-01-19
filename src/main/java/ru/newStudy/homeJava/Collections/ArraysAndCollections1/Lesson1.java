@@ -1,4 +1,4 @@
-package ru.newStudy.homeJava.ArraysAndCollections1;
+package ru.newStudy.homeJava.Collections.ArraysAndCollections1;
 
 import java.util.Arrays;
 

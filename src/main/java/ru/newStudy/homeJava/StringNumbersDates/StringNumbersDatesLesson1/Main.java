@@ -7,8 +7,6 @@ public class Main {
         System.out.println(sumDigits(5059191));
         System.out.println(sumDigits(10));
         System.out.println(sumDigits(12345));
-
-
     }
 
     public static int sumDigits(int number) {
@@ -17,7 +15,6 @@ public class Main {
             sum += number % 10;
             number = number / 10;
         }
-
         return sum;
     }
 }

@@ -7,7 +7,6 @@ public class CardAccount extends BankAccount {
         amount = getMIN_BALANCE();
     }
 
-
     public void withdrawMoney(double sum) {
         if ((amount - sum) < getMIN_BALANCE()) {
             System.out.println("Вы ввели сумму превышающий остаток!");

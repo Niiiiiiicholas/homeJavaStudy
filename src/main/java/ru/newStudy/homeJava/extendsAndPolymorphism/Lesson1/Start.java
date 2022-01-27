@@ -17,7 +17,6 @@ public class Start {
         CardAccount cardAccount = new CardAccount();
         cardAccount.balanceAccount();
 
-
         System.out.println(bankAccount.send(cardAccount, 2500));
 
         bankAccount.balanceAccount();

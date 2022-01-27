@@ -12,38 +12,30 @@ public class Person {
         this.sex = sex;
         this.age = age;
     }
-
-    public String getName() {
+    public String getName(){
         return name;
     }
-
-    public String getSurname() {
+    public String getSurname(){
         return surname;
     }
-
-    public Sex getSex() {
+    public Sex getSex(){
         return sex;
     }
-
-    public int getAge() {
+    public int getAge(){
         return age;
     }
-
-    public enum Sex {
+    public enum Sex{
         MAN("Мужской"), WOMAN("Женский");
         private String s;
-
         Sex(String s) {
             this.s = s;
         }
-
-        public String getS() {
+        public String getS(){
             return s;
         }
     }
-
     @Override
-    public String toString() {
+    public String toString(){
         return name + " " + surname + " Пол " + sex.s + " Возраст " + age;
     }
 }

@@ -3,7 +3,8 @@ package ru.newStudy.homeJava.extendsAndPolymorphism.Lesson4;
 public class Start {
     public static void main(String[] args) {
         Actions[] actions = new Actions[]{new Cat("Tom", 14, 11),
-                new Person("Mark", 20, 13), new Robot("Fredy", 9, 15)};
+                new Person("Mark", 20, 13),
+                new Robot("Fredy", 9, 15)};
 
         Barriers[] barriers = new Barriers[]{new Wall(12), new Treadmill(9)};
 

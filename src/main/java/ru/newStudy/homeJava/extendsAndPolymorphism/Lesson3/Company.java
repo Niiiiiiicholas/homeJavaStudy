@@ -11,23 +11,19 @@ public class Company implements Capability {
     public void setIncome(double income) {
         Company.income = income;
     }
-
     //получение значения дохода компании
     public double getIncome() {
         return income;
     }
-
     //Возврат списка
     public List<Employee> getAllEmployees() {
         return allEmployees;
     }
-
     //найм одного сотрудника
     @Override
     public void hire(Employee employee) {
         allEmployees.add(employee);
     }
-
     //найм списка сотрудников
     @Override
     public void hireAll(Employee employee, int countEmployee) {
@@ -45,7 +41,6 @@ public class Company implements Capability {
             }
         }
     }
-
     //увольнение сотрудника
     @Override
     public void fire(int count) {
@@ -53,8 +48,6 @@ public class Company implements Capability {
             allEmployees.remove(i);
         }
     }
-
-
     //Сортировка зарлаты по возратанию
     List<Employee> getTopSalaryStaff(int count) {
         List<Employee> employees2 = new ArrayList<>();
@@ -65,7 +58,6 @@ public class Company implements Capability {
         }
         return employees2;
     }
-
     //Сортировка зарплаты по убыванию
     List<Employee> getLowestSalaryStaff(int count) {
         List<Employee> employees2 = new ArrayList<>();

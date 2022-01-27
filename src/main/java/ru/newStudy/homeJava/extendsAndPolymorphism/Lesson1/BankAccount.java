@@ -10,15 +10,12 @@ public class BankAccount {
     public BankAccount() {
         amount = MIN_BALANCE;
     }
-
     public Date getDate() {
         return date;
     }
-
     public double getMIN_BALANCE() {
         return MIN_BALANCE;
     }
-
     //Снять со счет деньги
     public void withdrawMoney(double sum) {
         if ((amount - sum) < MIN_BALANCE) {
@@ -28,19 +25,16 @@ public class BankAccount {
             System.out.printf("Вы сняли со счета: %.2f руб.\n", sum);
         }
     }
-
     //Внести на счет деньги
     public void putMoney(double sum) {
         date = new Date();
         amount += sum;
         System.out.printf("Пополнение счета прошло успешно, на сумму: %.2f руб.\n", amount);
     }
-
     //Получить остаток на счете
     public void balanceAccount() {
         System.out.printf("Ваш остаток по счету: %.2f руб.\n", amount);
     }
-
     //Перевод со счета на счет
     public boolean send(BankAccount receiver, double amount) {
         long time = System.currentTimeMillis();

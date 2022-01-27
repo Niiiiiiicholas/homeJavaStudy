@@ -10,15 +10,12 @@ public abstract class Clothes {
         this.price = price;
         this.color = color;
     }
-
     public Size getSize() {
         return size;
     }
-
     public int getPrice() {
         return price;
     }
-
     public Color getColor() {
         return color;
     }

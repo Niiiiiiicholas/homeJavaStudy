@@ -7,7 +7,6 @@ public class Operator extends Employee {
     public Operator() {
         setSalary(getMonthSalary());
     }
-
     //Генератор дохода менеджера
     public double getMonthSalary() {
         return FIX_SALARY;

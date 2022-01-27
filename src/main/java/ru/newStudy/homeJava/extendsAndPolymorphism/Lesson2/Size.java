@@ -7,7 +7,6 @@ public enum Size {
     Size(int euroSize) {
         this.euroSize = euroSize;
     }
-
     public String getDescription() {
         switch (this) {
             case XXS:
@@ -16,7 +15,6 @@ public enum Size {
                 return "Взрослый размер";
         }
     }
-
     public int getEuroSize() {
         return euroSize;
     }

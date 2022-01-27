@@ -10,27 +10,22 @@ public class Cat implements Actions {
         this.jumpHeight = jumpHeight;
         this.runLength = runLength;
     }
-
     @Override
     public String getName() {
         return name;
     }
-
     @Override
     public int jumpHeight() {
         return jumpHeight;
     }
-
     @Override
     public int runLength() {
         return runLength;
     }
-
     @Override
     public void run() {
         System.out.println("Кот бежит");
     }
-
     @Override
     public void jump() {
         System.out.println("Кот прыгает");

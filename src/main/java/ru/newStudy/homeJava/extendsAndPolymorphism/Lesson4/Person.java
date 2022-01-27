@@ -10,30 +10,24 @@ public class Person implements Actions {
         this.jumpHeight = jumpHeight;
         this.runLength = runLength;
     }
-
     @Override
     public String getName() {
         return name;
     }
-
     @Override
     public int jumpHeight() {
         return jumpHeight;
     }
-
     @Override
     public int runLength() {
         return runLength;
     }
-
     @Override
     public void run() {
         System.out.println("Человек бежит");
     }
-
     @Override
     public void jump() {
         System.out.println("Человек прыгает");
     }
-
 }

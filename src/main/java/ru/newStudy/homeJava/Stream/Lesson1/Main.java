@@ -7,9 +7,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main
-{
-    private static String staffFile = "staff.txt";
+public class Main{
+    private static String staffFile = "src/staff.txt";
     private static String dateFormat = "dd.MM.yyyy";
 
     public static void main(String[] args)

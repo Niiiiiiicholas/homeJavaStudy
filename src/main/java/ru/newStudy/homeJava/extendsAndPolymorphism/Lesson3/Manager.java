@@ -9,12 +9,10 @@ public class Manager extends Employee {
         setSalary(getMonthSalary());
         getCompany().setIncome(getCompany().getIncome() + genSalaryCompany());
     }
-
     //Генератор дохода компании
     public double genSalaryCompany() {
         return (Math.random() * ((140000 - 115000) + 1)) + 115000;
     }
-
     //Генератор дохода менеджера
     public double getMonthSalary() {
         return FIX_SALARY + (genSalaryCompany() * PREMIUM_RATIO);

@@ -7,17 +7,14 @@ public class Treadmill implements Barriers {
     public Treadmill(int length) {
         this.length = length;
     }
-
     @Override
     public int getHeight() {
         return 0;
     }
-
     @Override
     public int getLength() {
         return length;
     }
-
     @Override
     public String nameBarrier() {
         return nameBarrier;
